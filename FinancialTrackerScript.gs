@@ -14,9 +14,9 @@ function createFinancialTracker() {
     gray: '#E8E8E8'       // Neutral
   };
 
-  // Delete existing sheets except first one
+  // Delete existing sheets except first one (delete from end to avoid index shifting)
   const sheets = ss.getSheets();
-  for (let i = 1; i < sheets.length; i++) {
+  for (let i = sheets.length - 1; i > 0; i--) {
     ss.deleteSheet(sheets[i]);
   }
 
