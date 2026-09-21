@@ -21,10 +21,11 @@ function createFinancialTracker() {
   }
 
   // Rename first sheet to Dashboard
-  sheets[0].setName('Dashboard');
+  const dashboardSheet = sheets[0];
+  dashboardSheet.setName('Dashboard');
 
   // Create all sheets
-  createDashboardSheet(ss, colors);
+  createDashboardSheet(dashboardSheet, colors);
   createIncomeSheet(ss, colors);
   createExpensesSheet(ss, colors);
   createInvestmentsSheet(ss, colors);
@@ -35,8 +36,7 @@ function createFinancialTracker() {
   SpreadsheetApp.getUi().alert('✅ Financial Tracker created successfully!');
 }
 
-function createDashboardSheet(ss, colors) {
-  const sheet = ss.getSheetByName('Dashboard');
+function createDashboardSheet(sheet, colors) {
   sheet.getRange('A1:E3').clearContent();
 
   // Title
