@@ -1,0 +1,22 @@
+{
+  "name": "financial-tracker",
+  "version": "1.0.0",
+  "description": "Personal financial tracker app - Track income, expenses, investments, and savings goals with Myanmar trip countdown",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "deploy": "wrangler pages publish ."
+  },
+  "keywords": [
+    "finance",
+    "tracker",
+    "budget",
+    "investment",
+    "savings"
+  ],
+  "author": "Shun Okadai",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
