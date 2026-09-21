@@ -1,22 +1,17 @@
 {
-  "name": "financial-tracker",
+  "name": "financial-tracker-sheets",
   "version": "1.0.0",
-  "description": "Personal financial tracker app - Track income, expenses, investments, and savings goals with Myanmar trip countdown",
-  "main": "index.html",
-  "scripts": {
-    "dev": "python -m http.server 8000",
-    "deploy": "wrangler pages publish ."
-  },
+  "description": "Personal financial tracker using Google Sheets - Track income, expenses, investments (Shin-NISA), budgets, and Myanmar trip savings",
+  "main": "GOOGLE_SHEETS_SETUP.md",
   "keywords": [
     "finance",
     "tracker",
     "budget",
+    "google-sheets",
     "investment",
-    "savings"
+    "savings",
+    "shin-nisa"
   ],
   "author": "Shun Okadai",
-  "license": "MIT",
-  "devDependencies": {
-    "wrangler": "^3.0.0"
-  }
+  "license": "MIT"
 }
