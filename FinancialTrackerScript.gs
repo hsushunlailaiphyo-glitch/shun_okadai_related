@@ -145,7 +145,11 @@ function createIncomeSheet(ss, colors) {
   }
 
   // Column widths
-  sheet.setColumnWidths([150, 250, 150, 150, 250]);
+  sheet.setColumnWidth(1, 150);
+  sheet.setColumnWidth(2, 250);
+  sheet.setColumnWidth(3, 150);
+  sheet.setColumnWidth(4, 150);
+  sheet.setColumnWidth(5, 250);
 }
 
 function createExpensesSheet(ss, colors) {
@@ -186,7 +190,10 @@ function createExpensesSheet(ss, colors) {
     }
   }
 
-  sheet.setColumnWidths([150, 200, 150, 250]);
+  sheet.setColumnWidth(1, 150);
+  sheet.setColumnWidth(2, 200);
+  sheet.setColumnWidth(3, 150);
+  sheet.setColumnWidth(4, 250);
 }
 
 function createInvestmentsSheet(ss, colors) {
@@ -222,7 +229,10 @@ function createInvestmentsSheet(ss, colors) {
   sheet.getRange('A9').setValue('TOTAL PORTFOLIO').setFontWeight('bold');
   sheet.getRange('B9').setFormula('=SUM(B4:B7)').setNumberFormat('¥#,##0').setFontWeight('bold');
 
-  sheet.setColumnWidths([280, 150, 150, 150]);
+  sheet.setColumnWidth(1, 280);
+  sheet.setColumnWidth(2, 150);
+  sheet.setColumnWidth(3, 150);
+  sheet.setColumnWidth(4, 150);
 }
 
 function createMyanmarTripSheet(ss, colors) {
@@ -255,7 +265,8 @@ function createMyanmarTripSheet(ss, colors) {
   sheet.getRange('A10:B11').setValues([['Current', '0'], ['Target', '200000']]);
   sheet.getRange('B10:B11').setNumberFormat('¥#,##0');
 
-  sheet.setColumnWidths([250, 200]);
+  sheet.setColumnWidth(1, 250);
+  sheet.setColumnWidth(2, 200);
 }
 
 function createBudgetSheet(ss, colors) {
@@ -306,7 +317,11 @@ function createBudgetSheet(ss, colors) {
     }
   }
 
-  sheet.setColumnWidths([200, 150, 150, 150, 120]);
+  sheet.setColumnWidth(1, 200);
+  sheet.setColumnWidth(2, 150);
+  sheet.setColumnWidth(3, 150);
+  sheet.setColumnWidth(4, 150);
+  sheet.setColumnWidth(5, 120);
 }
 
 function createGoalsSheet(ss, colors) {
@@ -346,7 +361,12 @@ function createGoalsSheet(ss, colors) {
     }
   }
 
-  sheet.setColumnWidths([250, 150, 150, 150, 150, 120]);
+  sheet.setColumnWidth(1, 250);
+  sheet.setColumnWidth(2, 150);
+  sheet.setColumnWidth(3, 150);
+  sheet.setColumnWidth(4, 150);
+  sheet.setColumnWidth(5, 150);
+  sheet.setColumnWidth(6, 120);
 }
 
 // Run this function from Extensions > Apps Script > Run
